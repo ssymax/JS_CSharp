@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,6 +50,8 @@
     <Compile Include="Exercises\LINQ\User.cs" />
     <Compile Include="Exercises\ListTest.cs" />
     <Compile Include="Exercises\Parser\CommandParser.cs" />
+    <Compile Include="Samples\Static\StaticClass.cs" />
+    <Compile Include="Samples\Static\StaticState.cs" />
     <Compile Include="Exercises\String\StringConcat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,7 +83,7 @@
     <Compile Include="Samples\Statements\Jumps.cs" />
     <Compile Include="Samples\Statements\Loops.cs" />
     <Compile Include="Samples\Statements\Operators.cs" />
-    <Compile Include="Samples\Static.cs" />
+    <Compile Include="Samples\Static\Static.cs" />
     <Compile Include="Samples\Threading\Parallels\ParallelPresentation.cs" />
     <Compile Include="Samples\Threading\Parallels\PlinqPresentation.cs" />
     <Compile Include="Samples\Threading\Tasks\AsyncAwaitPresentation.cs" />
@@ -110,6 +113,8 @@
     <Content Include="Samples\SQL\SqlDML.sql" />
     <Content Include="Samples\SQL\Transaction.sql" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Exercises\Static\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
